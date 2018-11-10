@@ -1,0 +1,32 @@
+extends templates/base-template.pug
+
+block prepend style
+	link(rel="stylesheet" type="text/css" href="css/fontello.css")
+
+block append style
+	link(rel="shortcut icon" href="img/icons/favicon/favicon.ico" type='image/x-icon')
+	link(rel="apple-touch-icon" sizes="180x180" href="img/icons/favicon/apple-icon-180x180.png")
+	link(rel="icon" type="image/png" sizes="192x192" href="img/icons/favicon/android-icon-192x192.png")
+	link(rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon/favicon-32x32.png")
+	link(rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon/favicon-16x16.png")
+	link(rel="manifest" href="img/icons/favicon/manifest.json")
+
+block promo
+	include ../blocks/promo/promo.pug
+
+block header
+	include ../blocks/header/header.pug
+	
+block main
+	main
+		include ../blocks/lightinst-section/lightinst-section.pug
+		include ../blocks/htmlinst-section/htmlinst-section.pug
+		include ../blocks/appinst-section/appinst-section.pug
+		include ../blocks/afterinst-section/afterinst-section.pug
+		include ../blocks/contacts-section/contacts-section.pug
+
+block footer
+	include ../blocks/footer/footer.pug
+
+block prepend js
+	script(src="js/jquery-3.3.1.min.js")

@@ -1,0 +1,18 @@
+mixin afterinst-item(stepnumber, itemtext)
+	li.afterinst__item.afterinst-item
+		span.afterinst-item__text #{itemtext}
+			span.afterinst-item__stepnumber Шаг #{stepnumber}.
+
+section.afterinst
+	.afterinst__container.container
+		h2.afterinst__title Что вас ждет после установки
+		span.afterinst__subtitle Идейные соображения высшего порядка, а также сложившаяся структура организации позволяет
+		ul.afterinst__list
+			+afterinst-item(1, Создание учетной записи компании и администратора)
+			+afterinst-item(2, Активация учетной записи)
+			+afterinst-item(3, Начальная настройка)
+			+afterinst-item(4, Установка кнопки Webim на сайт)
+			+afterinst-item(5, Регистрация оператора)
+			+afterinst-item(6, Тест сервиса)
+		button.afterinst__btn-possible.btn Все возможности Webim
+		button.afterinst__btn-freetest.btn Протестировать бесплатно
