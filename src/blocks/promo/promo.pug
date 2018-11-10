@@ -1,0 +1,23 @@
+mixin main-nav (navLink)
+	li.main-nav__item
+		a(href='#').main-nav__link #{navLink}
+
+.promo
+	.promo__container.container
+		.promo__burger--straight.promo-burger
+			.straight-line.straight-line-1
+			.straight-line.straight-line-2
+			.straight-line.straight-line-3
+		.promo__burger--crossed.promo-burger
+			.straight-line.cross-line-1
+			.straight-line.cross-line-2
+		span.promo__access.promo__word Вход
+		span.promo__reg.promo__word Регистрация
+		nav.main-nav
+			ul.main-nav__list
+				+main-nav ('Возможности')
+				+main-nav ('Тарифы')
+				+main-nav ('Партнеры')
+				+main-nav ('Помощь')
+		a(href="index.html").promo__logo.logo
+			svg(src='img/logo_head.svg' alt='Логотип компании')
