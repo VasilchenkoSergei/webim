@@ -1,0 +1,35 @@
+.contacts {
+  padding-top: 90px;
+  
+  &__text {
+    @include title-subtext;
+    padding-bottom: 90px;
+  }
+
+  &__list {
+    padding-left: 115px;
+  }
+
+  &__item {
+    padding-bottom: 85px;
+  }
+
+  &__link {
+    color: #0da088;
+    text-decoration: underline;
+    font-size: 1.7rem;
+    position: relative;
+
+    &:before {
+      content: '';
+      width: 67px;
+      height: 67px;
+      position: absolute;
+      left: -120px;
+      top: -15px;
+      background-image: url(../img/3-chatbot.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

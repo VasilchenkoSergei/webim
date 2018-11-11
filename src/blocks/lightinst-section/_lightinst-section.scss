@@ -1,0 +1,44 @@
+.lightinst {
+
+  &__title {
+    @include section-title;
+  }
+
+  &__subtitle {
+    @include title-subtext;
+    padding-bottom: 250px;
+  }
+
+  &__block {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 90px;
+  }
+}
+
+.lightinst-link {
+  display: block;
+  padding-left: 30px;
+  padding-right: 100px;
+  position: relative;
+  cursor: pointer;
+
+  &__number {
+    color: #393e6b;
+    font-size: 150px;
+    opacity: 0.15;
+    font-style: bold;
+    position: absolute;
+    left: -20px;
+    top: -170px;
+    z-index: -5;
+  }
+
+  &__text {
+    display: block;
+    color: #0da088;
+    border-bottom: 4px solid #0da088;
+    font-size: 1.9rem;
+  }
+}

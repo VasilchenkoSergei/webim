@@ -1,17 +1,17 @@
 mixin contacts-item(text)
 	li.contacts__item
-		a.contacts__link #{text}
+		a(href='#').contacts__link #{text}
 
 section.contacts
 	.contacts__container.container
 		p.contacts__text Webim - это не только онлайн-консультант. Интегрируйте и другие каналы, чтобы клиенты могли обращаться к вам любым удобным способом
 		ul.contacts__list
-			+contacts-item(Социальные сети)
-			+contacts-item(Мессенджры)
-			+contacts-item(Чат боты)
-			+contacts-item(Форма обратной связи)
-			+contacts-item(Яндекс.Диалоги)
-			+contacts-item(Чат в вашем мобильном приложении)
-			+contacts-item(Электронная почта)
+			+contacts-item('Социальные сети')
+			+contacts-item('Мессенджры')
+			+contacts-item('Чат боты')
+			+contacts-item('Форма обратной связи')
+			+contacts-item('Яндекс.Диалоги')
+			+contacts-item('Чат в вашем мобильном приложении')
+			+contacts-item('Электронная почта')
 
 

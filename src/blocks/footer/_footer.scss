@@ -1,0 +1,23 @@
+.page-footer {
+  height: 166px;
+  background-color: #393f6b;
+  padding-top: 60px;
+
+  &__logo {
+    display: none;
+  }
+
+  &__connect-icon {
+    display: none;
+  }
+}
+
+.footer-maincontacts,
+.footer-restcontacts {
+  display: none;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 1.6rem;
+}

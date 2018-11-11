@@ -1,0 +1,29 @@
+.page-header {
+  background-color: #eff4f4;
+  text-align: left;
+  padding-bottom: 77px;
+
+  &__title {
+    @include section-title;
+  }
+
+  &__text {
+    @include title-subtext;
+    width: 535px;
+    line-height: 2.5rem;
+    margin-bottom: 93px;
+  }
+
+  &__btn-tryfree {
+    @include btn;
+    background-color: #2cd3b8;
+    margin-bottom: 30px;
+  }
+
+  &__btn-rate {
+    @include btn;
+    background-color: #fff;
+    color: #393e6b;
+    border: 3px solid  #393e6b;
+  }
+} 

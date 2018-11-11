@@ -1,0 +1,56 @@
+.afterinst {
+  background-color: #eff4f4;
+  padding-bottom: 77px;
+
+  &__title {
+    @include section-title;
+  }
+
+  &__subtitle {
+    @include title-subtext;
+    padding-bottom: 100px;
+  }
+
+  &__list {
+    padding-left: 150px;
+  }
+
+  &__btn-possible {
+    @include btn;
+    margin-bottom: 30px;
+    background-color: #2cd3b8;
+  }
+
+  &__btn-freetest {
+    @include btn;
+    background-color: #3b4269;
+  }
+}
+
+.afterinst-item {
+  padding-bottom: 125px;
+  position: relative;
+
+  &:before {
+    content: '';
+    width: 102px;
+    height: 102px;
+    position: absolute;
+    border-radius: 51px;
+    background-color: #2cd3b8;
+    left: -150px;
+    top: -30px;
+    background-image: url(../img/icon_03.svg);
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__stepnumber {
+    font-size: 1.7rem;
+  }
+
+  &__text {
+    font-size: 1.7rem;
+  }
+}

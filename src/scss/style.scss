@@ -2,10 +2,11 @@ $main-font: "Ubuntu", sans-serif;
 $main-fz: 14px;
 $main-bgс: #fff;
 $second-bgc: #eff4f4;
-$btn-height: 3.3em;
+$btn-height: 6.5rem;
 
 @mixin btn {
   display: block;
+  width: 624px;
   color: #fff;
   border-radius: $btn-height/2;
   height: $btn-height;
@@ -13,7 +14,7 @@ $btn-height: 3.3em;
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
-  font-size: 1rem;
+  font-size: 1.7rem;
   border: none;
   cursor: pointer;
   outline: none;
@@ -30,9 +31,13 @@ $btn-height: 3.3em;
 }
 
 @mixin section-title {
-  font-size: 1.7rem;
-  text-align: center;
-  padding-top: 45px;
+  font-size: 3.5rem;
+  text-align: left;
+  padding-top: 100px; 
+  text-transform: uppercase;
+  color: #393e6b;
+  margin-top: 0;
+  margin-bottom: 66px;
 }
 
 @mixin section-title-1200 {
@@ -42,8 +47,9 @@ $btn-height: 3.3em;
 
 @mixin title-subtext {
   display: block;
-  font-size: 1.6rem;
-  text-align: center;
+  font-size: 1.7rem;
+  text-align: left;
+  color: #74757b;
 }
 
 @mixin title-subtext-1200 {
@@ -68,8 +74,6 @@ $btn-height: 3.3em;
   transform: scale(1.5);
 }
 
-@import 'fonts';
-
 body {
   font-family: $main-font;
   font-size: $main-fz;
@@ -90,6 +94,14 @@ body {
   width: calc(100% - 134px);
   max-width: 1220px;
   margin: 0 auto;
+}
+
+a {
+  cursor: pointer;
+
+  &:hover {
+    color: #393e6b;
+  }
 }
 
 

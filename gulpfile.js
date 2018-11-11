@@ -21,7 +21,6 @@ const csslint = require('gulp-csslint');
 const notify = require('gulp-notify');
 const pngquant = require('gulp-pngquant');
 const htmlbeautify = require('gulp-html-beautify');
-const spritesmith = require('gulp-spritesmith');
 
 
 
@@ -31,7 +30,7 @@ gulp.task('default', ['sass'], function() {
     });
 
     gulp.watch('src/**/*.scss', ['sass']);
-    gulp.watch('src/**/*.pug').on('change', browserSync.reload);
+    gulp.watch('src/**/*.pug', ['pug']);
     gulp.watch('src/js/*.js').on('change', browserSync.reload);
 });
 

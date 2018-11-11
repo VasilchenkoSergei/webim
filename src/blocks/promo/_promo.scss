@@ -1,6 +1,9 @@
 .promo {
   width: 100%;
   height: 170px;
+  box-shadow: 0 5px 10px 5px #eff4f4;
+  padding-top: 79px;
+
 
   &__burger--straight {
     display: flex;
@@ -8,10 +11,13 @@
     justify-content: space-between;
   }
 
+  &__burger--crossed {
+    display: none;
+  }
+
   &-burger {
     width: 57px;
     height: 43px;
-    margin-top: 79px;
   }
 
   &__word {
@@ -19,7 +25,7 @@
     font-size: 1.3rem;
     color: #393e6b;
     text-transform: uppercase;
-    margin-top: 45px;
+    padding-top: 45px;
   }
 
   &__access {
@@ -27,7 +33,7 @@
   }
 
   &__reg {
-    margin-left: 30px;
+    padding-left: 30px;
   }
 
   &__logo {
@@ -35,7 +41,7 @@
     width: 230px;
     height: 57px;
     margin: 0 auto;
-    margin-top: 68px;
+    padding-top: 68px;
   }
 }
 
@@ -50,16 +56,32 @@
 }
 
 .main-nav {
+  display: none;
+
+  position: absolute;
+  left: 0;
   width: 100%;
-  padding-top: 200px;
+  padding-top: 50px;
   text-align: center;
+  background-color: $main-bgс;
+  z-index: 50;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
   &__item {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+  }
 
-    &__link {
-      font-size: 1.5rem;
-      color: #393e6b;
+  &__link {
+    font-size: 3rem;
+    color: #393e6b;
+
+    &:hover {
+      color: #2cd3b8;
     }
   }
 }
