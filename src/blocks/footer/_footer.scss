@@ -10,6 +10,11 @@
   &__connect-icon {
     display: none;
   }
+
+  &__copyright-text {
+    color: #fff;
+    font-size: 1.6rem;
+  }
 }
 
 .footer-maincontacts,
@@ -17,7 +22,125 @@
   display: none;
 }
 
-.copyright {
-  color: #fff;
-  font-size: 1.6rem;
+
+
+@media(min-width: 1300px) {
+  
+.page-footer {
+  height: 284px;
+  position: relative;
+
+  &__logo {
+    display: block;
+    width: 147px;
+    height: 35px;
+    border: 2px solid red;
+  }
+
+  &__container {
+    max-width: 1520px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__copyright-text {
+    color: #b6b9c9;
+    font-size: 1rem;
+  }
+
+  &__connect {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+.footer-maincontacts {
+  width: 350px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__tel {
+    padding-left: 50px;
+    font-size: 1.7rem;
+    position: relative;
+    color: #fff;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: 0;
+      border: 1px solid red;
+    }
+  }
+
+  &__block {
+
+    &-tel {
+      font-size: 1.6rem;
+      color: #fff;
+    }
+
+    &-address {
+      display: block;
+      font-size: 1.1rem;
+      color: #adb0c2;
+    }
+  }
+}
+
+.footer-restcontacts {
+  width: 300px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__email {
+    width: 200px;
+
+    &-this {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.1rem;
+    }
+  }
+
+  &__jobhours {
+    color: #adb0c2;
+    font-size: 1.1rem;
+  }
+
+  &__socials {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer-socials {
+
+  &__icon {
+    font-size: 1.6rem;
+    color: #adb0c2;
+
+    &:hover {
+      color: #2cd3b8;
+    }
+  }
+}
 }

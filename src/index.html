@@ -14,12 +14,13 @@
     <link rel="stylesheet" type="text/css" href="css/fontello.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="shortcut icon" href="img/icons/favicon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/icons/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/icons/favicon/manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -33,7 +34,8 @@
             <div class="promo__burger--crossed promo-burger">
                 <div class="straight-line cross-line-1"></div>
                 <div class="straight-line cross-line-2"></div>
-            </div><span class="promo__access promo__word">Вход</span><span class="promo__reg promo__word">Регистрация</span>
+            </div>
+            <div class="promo__block promo-block"><span class="promo-block__access promo__word">Вход</span><span class="promo-block__reg promo__word">Регистрация</span></div>
             <nav class="main-nav">
                 <ul class="main-nav__list">
                     <li class="main-nav__item"><a class="main-nav__link" href="#">Возможности</a></li>
@@ -41,7 +43,7 @@
                     <li class="main-nav__item"><a class="main-nav__link" href="#">Партнеры</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="#">Помощь</a></li>
                 </ul>
-            </nav><a class="promo__logo logo" href="index.html"><svg src="img/logo_head.svg" alt="Логотип компании"></svg></a>
+            </nav><a class="promo__logo logo" href="index.html"></a>
         </div>
     </div>
     <header class="page-header" role="banner">
@@ -54,11 +56,11 @@
         <section class="lightinst">
             <div class="lightinst-container container">
                 <h2 class="lightinst__title">Простая установка</h2><span class="lightinst__subtitle">Установка онлайн-консультанта Webim не займет более 15 минут</span>
-                <div class="lightinst__block lightinst-block"><a class="lightinst-block__link lightinst-link" href="#"><span class="lightinst-link__number">1</span>
-                        <icon class="lightinst-link__icon"></icon><span class="lightinst-link__text">Регистрация</span>
-                    </a><a class="lightinst-block__link lightinst-link" href="#"><span class="lightinst-link__number">2</span>
-                        <icon class="lightinst-link__icon"></icon><span class="lightinst-link__text">Установка<br>HTML-кода</span>
-                    </a></div>
+                <div class="lightinst__block lightinst-block"><a class="lightinst-block__link lightinst-link" href="#"><span class="lightinst-link__number">1</span><svg class="lightinst-link__icon">
+                            <use xlink:href="img/sprite.svg"></use>
+                        </svg><span class="lightinst-link__text">Регистрация</span></a><a class="lightinst-block__link lightinst-link" href="#"><span class="lightinst-link__number">2</span><svg class="lightinst-link__icon">
+                            <use xlink:href="img/sprite.svg"></use>
+                        </svg><span class="lightinst-link__text">Установка<br>HTML-кода</span></a></div>
             </div>
         </section>
         <section class="htmlinst">
@@ -115,16 +117,18 @@
     </main>
     <footer class="page-footer" role="content-info">
         <div class="page-footer__container container">
-            <div class="page-footer__copyright"><a class="page-footer__logo logo" href="index.html"><svg src="img/logo_footer.svg" alt="Логотип компании"></svg></a><span class="copyright">&copy; Webim 2014-2017<br>Все права защищены</span></div>
+            <div class="page-footer__copyright"><a class="page-footer__logo logo" href="index.html"><svg src="img/logo_footer.svg" alt="Логотип компании"></svg></a><span class="page-footer__copyright-text">&copy; Webim 2014-2017<br>Все права защищены</span></div>
             <div class="page-footer__maincontacts footer-maincontacts"><a class="footer-maincontacts__tel" tel="tel:+78005004932">+7 (800) 500-49-32</a>
                 <div class="footer-maincontacts__block"><a class="footer-maincontacts__block-tel" tel="tel:+74993223754">+7 (499) 322-37-54</a><span class="footer-maincontacts__block-address">Москва, Серебряническая набережная, 29</span></div>
                 <div class="footer-maincontacts__block"><a class="footer-maincontacts__block-tel" tel="tel:+78123855337">+7 (812) 385-53-37</a><span class="footer-maincontacts__block-address">Санкт-Петербург, Чкаловский проспект, 15</span></div>
             </div>
             <div class="page-footer__restcontacts footer-restcontacts">
-                <div class="footer-restcontacts__email"><a href="mailto:contact@webim.ru">contact@webim.ru<br></a><a href="mailto:sales@webim.ru">sales@webim.ru</a></div><span class="footer-restcontacts__jobhours">Понедельник - пятница 10.00-18.00</span>
-                <div class="footer-restcontacts__socials"><i class="icon-vkontakte"></i><i class="icon-facebook"></i><i class="icon-twitter"></i><i class="icon-skype"></i></div>
+                <div class="footer-restcontacts__email"><a class="footer-restcontacts__email-this" href="mailto:contact@webim.ru">contact@webim.ru<br></a><a class="footer-restcontacts__email-this" href="mailto:sales@webim.ru">sales@webim.ru</a></div><span class="footer-restcontacts__jobhours">Понедельник - пятница 10.00-18.00</span>
+                <div class="footer-restcontacts__socials footer-socials"><a class="footer-socials__link" href="#"><i class="icon-vkontakte footer-socials__icon"></i></a><a class="footer-socials__link" href="#"><i class="icon-facebook footer-socials__icon"></i></a><a class="footer-socials__link" href="#"><i class="icon-twitter footer-socials__icon"></i></a><a class="footer-socials__link" href="#"><i class="icon-skype footer-socials__icon"></i></a></div>
             </div>
-            <div class="page-footer__connect-icon"><svg src="img/connect-icon.jpg" alt="иконка связи"></svg></div>
+            <div class="page-footer__connect"><svg class="page-footer__connect-icon">
+                    <use xlink:href="../sprite.svg#socials"></use>
+                </svg></div>
         </div>
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>

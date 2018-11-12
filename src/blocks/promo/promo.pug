@@ -3,6 +3,7 @@ mixin main-nav (navLink)
 		a(href='#').main-nav__link #{navLink}
 
 .promo
+	
 	.promo__container.container
 		.promo__burger--straight.promo-burger
 			.straight-line.straight-line-1
@@ -11,8 +12,9 @@ mixin main-nav (navLink)
 		.promo__burger--crossed.promo-burger
 			.straight-line.cross-line-1
 			.straight-line.cross-line-2
-		span.promo__access.promo__word Вход
-		span.promo__reg.promo__word Регистрация
+		.promo__block.promo-block
+			span.promo-block__access.promo__word Вход
+			span.promo-block__reg.promo__word Регистрация
 		nav.main-nav
 			ul.main-nav__list
 				+main-nav ('Возможности')
@@ -20,4 +22,4 @@ mixin main-nav (navLink)
 				+main-nav ('Партнеры')
 				+main-nav ('Помощь')
 		a(href="index.html").promo__logo.logo
-			svg(src='img/logo_head.svg' alt='Логотип компании')
+			//- svg(alt='Логотип компании')

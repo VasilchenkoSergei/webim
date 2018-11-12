@@ -92,7 +92,7 @@ body {
 
 .container {
   width: calc(100% - 134px);
-  max-width: 1220px;
+  max-width: 1020px;
   margin: 0 auto;
 }
 
@@ -101,6 +101,13 @@ a {
 
   &:hover {
     color: #393e6b;
+  }
+}
+
+footer a {
+
+  &:hover {
+    color: #2cd3b8;
   }
 }
 

@@ -54,3 +54,22 @@
     font-size: 1.7rem;
   }
 }
+
+@media(min-width: 1300px) {
+
+.afterinst {
+
+  &__btn-possible,
+  &__btn-freetest {
+    display: inline-block;
+    width: 266px;
+    height: 48px;
+    font-size: $main-fz;
+    line-height: 1rem;
+  }
+
+  &__btn-freetest {
+    margin-left: 20px;
+  }
+}
+}

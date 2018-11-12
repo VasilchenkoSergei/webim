@@ -6,13 +6,12 @@
 
   &__subtitle {
     @include title-subtext;
-    padding-bottom: 250px;
+    padding-bottom: 110px;
   }
 
   &__block {
     display: flex;
     align-items: flex-start;
-    flex-wrap: wrap;
     padding-bottom: 90px;
   }
 }
@@ -31,8 +30,14 @@
     font-style: bold;
     position: absolute;
     left: -20px;
-    top: -170px;
+    top: -40px;
     z-index: -5;
+  }
+
+  &__icon {
+    width: 80px;
+    height: 80px;
+    border:2px solid red;
   }
 
   &__text {
@@ -40,5 +45,6 @@
     color: #0da088;
     border-bottom: 4px solid #0da088;
     font-size: 1.9rem;
+    padding-top: 45px;
   }
 }
