@@ -28,7 +28,7 @@
 }
 
 .afterinst-item {
-  padding-bottom: 125px;
+  padding-bottom: 80px;
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -53,11 +53,7 @@
   }
 
   &__stepnumber {
-    font-size: 1.7rem;
-    margin-right: 10px;
-  }
-
-  &__text {
+    width: 450px;
     font-size: 1.7rem;
   }
 }
