@@ -9,9 +9,6 @@ mixin main-nav (navLink)
 			.straight-line.straight-line-1
 			.straight-line.straight-line-2
 			.straight-line.straight-line-3
-		.promo__burger--crossed.promo-burger
-			.straight-line.cross-line-1
-			.straight-line.cross-line-2
 		.promo__block.promo-block
 			span.promo-block__access.promo__word Вход
 			span.promo-block__reg.promo__word Регистрация
@@ -22,4 +19,4 @@ mixin main-nav (navLink)
 				+main-nav ('Партнеры')
 				+main-nav ('Помощь')
 		a(href="index.html").promo__logo.logo
-			//- svg(alt='Логотип компании')
+			object(type="image/svg+xml" data="../img/logo_head.svg" width="229" height="57").promo__logo-icon

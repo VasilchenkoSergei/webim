@@ -12,7 +12,7 @@
   }
 
   &__list {
-    padding-left: 150px;
+    padding-left: 0;
   }
 
   &__btn-possible {
@@ -30,24 +30,31 @@
 .afterinst-item {
   padding-bottom: 125px;
   position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
-  &:before {
-    content: '';
+  &__icon-wrap {
     width: 102px;
     height: 102px;
-    position: absolute;
     border-radius: 51px;
     background-color: #2cd3b8;
-    left: -150px;
-    top: -30px;
-    background-image: url(../img/icon_03.svg);
-    background-size: 60px 60px;
-    background-repeat: no-repeat;
-    background-position: center;
+    margin-right: 37px;
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
   &__stepnumber {
     font-size: 1.7rem;
+    margin-right: 10px;
   }
 
   &__text {
@@ -65,7 +72,7 @@
     width: 266px;
     height: 48px;
     font-size: $main-fz;
-    line-height: 1rem;
+    line-height: $main-fz;
   }
 
   &__btn-freetest {

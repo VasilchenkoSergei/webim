@@ -12,10 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-
-  &__burger--crossed {
-    display: none;
+    z-index: 50;
   }
 
   &-burger {
@@ -32,7 +29,6 @@
     width: 230px;
     height: 57px;
     margin: 0 auto;
-    border: 1px solid red;
   }
 }
 
@@ -42,20 +38,15 @@
   background-color: #3fd6bc;
 }
 
-.cross-line-1 {
-
-}
-
 .main-nav {
   display: none;
-
   position: absolute;
   left: 0;
   width: 100%;
-  padding-top: 50px;
+  padding-top: 100px;
   text-align: center;
   background-color: $main-bgс;
-  z-index: 50;
+  z-index: 2;
 
   &__list {
     display: flex;
@@ -74,6 +65,10 @@
 
     &:hover {
       color: #2cd3b8;
+    }
+
+    &:active {
+      color: #850cb8;
     }
   }
 }
@@ -119,6 +114,11 @@
     width: 115px;
     height: 30px;
     margin: 0;
+
+    &-icon {
+      width: 115px;
+      height: 30px;
+    }
   }
 }
 
